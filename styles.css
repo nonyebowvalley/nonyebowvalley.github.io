@@ -1,22 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-.container {
+header{
+    background-color: yellow;
+}
+
+header h1 {
+    color:deep grey;
+    font-size: 24px;
     text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
-h1 {
-    color: red;
-    font-size: 36px;
+nav ul {
+    background-color:#333;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main header section {
+    background-image: url('talking_heads-speaking_in_tongues.png');
+    background-size: cover;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), (rgba(0, 0, 0, 0.5)) url('talking_heads-speaking_in_tongues.png');
+}
+
+ main header section img {
+        float: right;
+        max-width: 150px;
+      }
+/* Main content styles */          
+main header section h1, main header section h2, main header section h3 {
+    opacity: 0.4;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+
+main header section h1 {
+    font-size: 24px;
+    text-align:inherit;
+}
+
+main header h2 {
+    font-size: 18px;
+    text-align: left;
+}
+
+main header h3 {
+  font-size:12px;
+  text-align: left;
+  
 }
 
 p {
-    color: #666;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Sidebar styles */
+aside {
+    float: right;
+    width: 30%;
+    background-color:#333;
+    color:azure;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+aside h2 {
+   background-color: yellow;
+   color: #333;
+   padding: 25px;
+}
+
+aside blockquote {
+    padding-left: 10px;
+    font-style: italic;
+}
+
+article section{
+    flex: 2;
+}
+
+article section h2 {
+    background-color: yellow;
+    width: 130px;
+    position: relative;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+article section p {
+    background-color: #fff;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+article section h2, article section p {
+    border-left: 5px solid yellow;
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+/* Video styles */
+iframe { 
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    padding: 10px;
+    border-top: 5px solid yellow;
+}
+
+footer a { 
+    background-color:yellow;
+    color: #333;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    aside {
+        float: none;
+        width: 100%;
+        border-left: none;
+    }
 }
